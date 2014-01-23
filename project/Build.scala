@@ -30,8 +30,8 @@ object ApplicationBuild extends Build {
     .settings(
       resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
       resolvers += "ReactiveCouchbase" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots",
-      libraryDependencies += "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.1-SNAPSHOT",
-      libraryDependencies += "org.reactivecouchbase" %% "reactivecouchbase-es" % "0.1-SNAPSHOT",
+      libraryDependencies += "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.2-SNAPSHOT",
+      libraryDependencies += "org.reactivecouchbase" %% "reactivecouchbase-es" % "0.2-SNAPSHOT",
       libraryDependencies += "org.specs2" %% "specs2" % "2.2.1" % "test",
       organization := "foo.bar",
       version := appVersion,

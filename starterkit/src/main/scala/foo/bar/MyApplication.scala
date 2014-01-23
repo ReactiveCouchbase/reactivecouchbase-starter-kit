@@ -14,7 +14,7 @@ object Utils {
   val timeout = Duration(10, TimeUnit.SECONDS)
 }
 
-object MyApplication extends App{
+object MyApplication extends App {
 
     import Utils._
 
