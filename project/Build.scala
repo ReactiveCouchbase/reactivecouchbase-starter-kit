@@ -5,13 +5,13 @@ object ApplicationBuild extends Build {
 
   val appName         = "starterkit"
   val appVersion      = "0.3-SNAPSHOT"
-  val appScalaVersion = "2.10.2"
-  val appScalaBinaryVersion = "2.10"
-  val appScalaCrossVersions = Seq("2.10.2")
+  val appScalaVersion = "2.11.1"
+  //val appScalaBinaryVersion = "2.10"
+  val appScalaCrossVersions = Seq("2.11.1", "2.10.4")
 
   lazy val baseSettings = Defaults.defaultSettings ++ Seq(
     scalaVersion := appScalaVersion,
-    scalaBinaryVersion := appScalaBinaryVersion,
+    //scalaBinaryVersion := appScalaBinaryVersion,
     crossScalaVersions := appScalaCrossVersions,
     parallelExecution in Test := false
   )
@@ -32,7 +32,7 @@ object ApplicationBuild extends Build {
       resolvers += "ReactiveCouchbase" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots",
       libraryDependencies += "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.3-SNAPSHOT",
       libraryDependencies += "org.reactivecouchbase" %% "reactivecouchbase-es" % "0.3-SNAPSHOT",
-      libraryDependencies += "org.specs2" %% "specs2" % "2.2.1" % "test",
+      libraryDependencies += "org.specs2" %% "specs2" % "2.3.12" % "test",
       organization := "foo.bar",
       version := appVersion,
       publishMavenStyle := true,
